@@ -17,6 +17,12 @@ The Direct Aid contract makes the relief process easy, fast, and transparent. It
 ```
 
 ## User Roles
+1. Admin
+2. Applicant
+
+The admin user can set amount for a category, add fund to the contract, review the application submitted by an applicant, and can take action on it.
+
+An applicant user is one who need economical help to survive during the pandemic. An applicant user can apply to receive aid by providing basic information. An applicant user could be a small business owner, healthcare worker, farmer, daily wage worker, etc.
 
 ## Methods
 
