@@ -1,6 +1,7 @@
 # DirectAid Smart Contract
 
 ## Overview
+The Direct Aid contract makes the relief process easy, fast, and transparent. It helps the government to transfer aid to the needy people during this Covid-19 pandemic. It stores application status on blockchain as well as transferring funds from the smart contract to the user's wallet.
 
 ## Create the Contract
 
