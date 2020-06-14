@@ -17,16 +17,37 @@ The Direct Aid contract makes the relief process easy, fast, and transparent. It
 ```
 
 ## User Roles
-1. Admin
+1. Admin (Owner of the contract)
 2. Applicant
 
 The admin user can set amount for a category, add fund to the contract, review the application submitted by an applicant, and can take action on it.
 
 An applicant user is one who need economical help to survive during the pandemic. An applicant user can apply to receive aid by providing basic information. An applicant user could be a small business owner, healthcare worker, farmer, daily wage worker, etc.
 
+## Deployment
+
+During deployment, the owner has to pass the start date and end date. In between these dates, applicants are allowed to submit their applications.  
+
 ## Methods
 
-### Test Method 1
+### AddFundToContract
 
+Using this method, the owner of the contract can transfer the total amount that needs to distribute to the people. The smart contract will then hold that amount. 
 
+### SetAmountForCategory
 
+The owner can set different amounts for the categories with passing `categoryType` and `amount`. For example, the owner set the amount 100CRS for category type 5 (i.e. HealthWorker). meaning that, whenever any application gets approved of the HealthWorker category, the applicant will receive 100CRS.
+
+### SubmitApplication
+
+An applicant can apply for aid with parameters `applicationId`, `category`, and the `currentTime`. The methods stores various data like applicant wallet address, application id, and category, etc. to the smart contract state. Initially, application status would be `PENDING`.
+
+### Approve
+
+The owner of the contract can review applications, if they find information correct,  the owner will execute this method, and the amount will be transferred to the applicant's wallet.
+
+This method will change the application status from `PENDING` to `APPROVED`.
+
+### Reject
+
+If the application information would found incorrect, the owner can reject the application using this method. This method will change the application status from `PENDING` to `REJECTED`.
