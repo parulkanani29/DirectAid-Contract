@@ -26,7 +26,7 @@ An applicant user is one who need economical help to survive during the pandemic
 
 ## Deployment
 
-During deployment, the owner has to pass the `startTime` and `endTime` in unix timestamp. In between these times, applicants are allowed to submit their applications.  
+During deployment, the owner has to pass the `startTime` and `endTime` in unix timestamp format. In between these times, applicants are allowed to submit their applications.  
 
 ## Methods
 
